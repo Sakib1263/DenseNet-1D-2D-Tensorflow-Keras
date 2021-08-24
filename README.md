@@ -22,6 +22,7 @@ The speciality about this model is its flexibility. The user has the option for:
 For DenseNet (especially for the deeper models), it is necessary to be careful about the overwhelming number of paramaters resulting just from a slight increase of model width or kernel size due to the bulkiness of the model (which might result into a RAM or session crash). 
 
 ## References  
-[1] 
-[2] 
-[3] 
+[1] Huang, G., Liu, Z., van der Maaten, L., & Weinberger, K. (2021). Densely Connected Convolutional Networks. arXiv.org. Retrieved 24 August 2021, from https://arxiv.org/abs/1608.06993.  
+[2] PyTorch. Pytorch.org. (2021). Retrieved 24 August 2021, from https://pytorch.org/hub/pytorch_vision_densenet/.  
+[3] He, K., Zhang, X., Ren, S., & Sun, J. (2021). Deep Residual Learning for Image Recognition. arXiv.org. Retrieved 24 August 2021, from https://arxiv.org/abs/1512.03385.  
+
