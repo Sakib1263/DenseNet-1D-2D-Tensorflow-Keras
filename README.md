@@ -19,6 +19,7 @@ The speciality about this model is its flexibility. The user has the option for:
 3. Varying number of classes for Classification tasks and number of extracted features for Regression tasks.
 4. Varying number of Channels in the Input Dataset.  
 5. Optional turnoff of the Bottleneck Architecture: The bottleneck structure of the Dense Blocks can be removed by avoiding the 1x1 Conv block in each layer. Turning off the Bottleneck structure will make the model lighter but performance might vary.  
+
 For DenseNet (especially for the deeper models), it is necessary to be careful about the overwhelming number of paramaters resulting just from a slight increase of model width or kernel size due to the bulkiness of the model (which might result into a RAM or session crash). 
 
 ## References  
