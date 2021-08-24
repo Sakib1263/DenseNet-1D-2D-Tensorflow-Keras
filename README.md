@@ -10,7 +10,7 @@ Detail architecture for various versions of DenseNet is provided in the followin
 Here it can be seen that, after initial Convolution (7x7) and Pooling layer (similar to the ResNets [3]), there is a repitition of Dense Blocks and Transitions Blocks. The Transition Blocks contain an (1x1) Convolutional Layer and Average-Pooling. While the Dense Blocks contain multiple iterations (or layers) of (1x1 Conv Block + 3x3 Conv Block). The number of iterations for the 3rd and 4th Dense block vary for each model. In the end, there is a Global Pooling layer followed by an Multi Layer Perceptron (MLP) layer (which might differ in structure based on the model type e.g., Classification or regression). A 3D view of a singla Dense Block of 5 layers has been presented in the figure below [1].
 
 ![DenseNet Architectures Params](https://github.com/Sakib1263/DenseNet-1D-2D-Tensorflow-Keras/blob/main/Documents/Images/Dense_Block.png "DenseNet Architectures")  
-Here it can be seen that inside the Dense Blocks, there are residual or skip connections from one layer to every other layer. During implementation, all layers are concatenated.  
+Here it can be seen that inside the Dense Blocks, there are residual or skip connections from one layer to every other layer. During implementation, all layers are concatenated. Each CNN block is followed by a BatchNormalization (BN) and an Activation ('ReLU') layer. DenseNet161, which has been implemented following KERAS and PyTorch implementations in 2D (not implemented in the original paper), has Dense Blocks with layers: [6,12,36,24].
 
 ## Supported Features  
 The speciality about this model is its flexibility. The user has the option for: 
